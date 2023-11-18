@@ -26,4 +26,4 @@ jobs:
           mongodb-version: ${{matrix.mongodb-version}}
       - run: yarn install
       - run: yarn --cwd client build
-      - run: yarn test
+      - run: yarn test-watch
