@@ -14,4 +14,4 @@ jobs:
         with:
           node-version: "16"
       - run: yarn install
-      - run: yarn --cwd client start
+      - run: yarn --cwd client build
