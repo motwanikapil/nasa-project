@@ -1,0 +1,23 @@
+{
+  "name": "nasa-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "install-server": "yarn --cwd server",
+    "install-client": "yarn --cwd client",
+    "server": "yarn --cwd server watch ",
+    "client": "yarn --cwd client start",
+    "watch": "concurrently \"yarn client\" \"yarn server\"",
+    "deploy": "yarn --cwd client build && yarn --cwd server start",
+    "deploy-cluster": "yarn --cwd client build && yarn --cwd server cluster",
+    "test": "yarn --cwd client test && yarn --cwd server test",
+    "test-watch": "yarn --cwd server test-watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
