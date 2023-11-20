@@ -13,6 +13,7 @@
     "deploy": "yarn --cwd client build && yarn --cwd server start",
     "deploy-cluster": "yarn --cwd client build && yarn --cwd server cluster",
     "test": "yarn --cwd client test && yarn --cwd server test",
+    "test-server": "yarn --cwd server test",
     "test-watch": "yarn --cwd server test-watch"
   },
   "keywords": [],
